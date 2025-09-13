@@ -1,0 +1,17 @@
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif;margin:0;padding:0}
+body{display:flex;flex-direction:column;min-height:100vh;background:#0b1020;color:#e6eef8}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#071126;box-shadow:0 4px 12px rgba(0,0,0,0.5);position:fixed;top:0;left:0;right:0;z-index:10}
+.title{font-weight:700;font-size:18px}
+.controls{display:flex;gap:8px;align-items:center}
+#gameContainer{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:60px}
+canvas{flex:1;width:100%;height:100%;background:linear-gradient(180deg,#081226 0%, #00121a 100%);border-radius:0}
+#hud{display:flex;gap:16px;justify-content:center;margin:8px;color:#cfefff;font-size:16px}
+
+button, select{background:#0f1724;color:#dff3ff;border:1px solid rgba(255,255,255,0.04);padding:6px 10px;border-radius:6px;transition:all 0.2s ease-in-out}
+button:hover{transform:scale(1.1);background:#1c2940}
+
+/* Themes */
+:root{--accent:#e11d48;--accent2:#ffb703;--bg:#071126}
+body.theme-neon canvas{background:linear-gradient(180deg,#0b0f1a,#001f2a)}
+body.theme-neon .title{color:#7cffd6}
+body.theme-space canvas{background:radial-gradient(ellipse at center,#020214,#000011 60%)}
